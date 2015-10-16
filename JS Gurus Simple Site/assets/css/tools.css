@@ -1,0 +1,30 @@
+.fleft {
+  float : left;
+}
+
+.clear {
+    clear: both;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.full {
+    width: 100%;
+}
+
+.circle {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    overflow: hidden;
+}
+
+.padding-left-1em {
+    padding-left: 1em;
+}
+
+.margin-left-1em {
+    margin-left: 1em;
+}

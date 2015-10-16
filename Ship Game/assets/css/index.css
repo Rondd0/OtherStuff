@@ -1,0 +1,51 @@
+#container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+#ship {
+    background-image: url("../images/viper_mark_ii.png");
+    background-size: 100px 100px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.missile {
+    display: inline-block;
+    position: absolute;
+    /*top: 0px;
+    left: 0px;*/
+    background-color: red;
+    width: 5px;
+    height: 10px;
+}
+
+/*Animation -------------------------------------------------------------------*/
+#enemy {
+    position: relative;
+
+    -webkit-animation-name: moveAlien; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 10s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+    -webkit-animation-timing-function: ease-in-out; /* Chrome, Safari, Opera */
+
+    animation-name: moveAlien;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes moveAlien {
+    0%   {left: 0px; top: 0px;}
+    50%  {left: 1000px; top: 0px;}
+    100% {left: 0px; top: 0px;}
+}
+
+@keyframes moveAlien {
+    0%   {left: 0px; top: 0px;}
+    50%  {left: 1000px; top: 0px;}
+    100% {left: 0px; top: 0px;}
+}
+/*----------------------------------------------------------------------------*/
